@@ -1,2 +1,27 @@
-faire le resumé du cours sur github.
-lier son ompte github à son mac
+Git et github sont des outils permettant de gerer des version de nos code sources. 
+On peut démarrer un dépot Git en clonant un dossier existant: 
+
+$ git clone ssh://bob@serveur/git/projet.git
+$ git clone 
+
+La commande «clone» crée une copie d’un dépôt Git existant.
+Vous clonez un dépôt avec git clone [url]. On a à la fois le clone
+par l’url ssh qui demande une clé public et par https qui
+demande à chaque fois l’authentification.
+
+Le projet Git passe par quatres étapes:
+
+.   la modification
+.   l'indexation
+.   la validation ou le commit
+
+Les branches avec Git: 
+
+Faire une branche signifie diverger de la ligne principale de
+développement et continuer à travailler sans se préoccuper de cette
+ligne principale.
+La branche par défaut dans Git quand vous créez un dépôt
+s’appelle master et elle pointe vers le dernier des commits réaliser.
+
+$ git branch feature_x permet de creer une nouvelle branche et $ git checkout feature_x permet de ce deplacer entre branhes.
+sans oublier que $ git checkout master permet de revenir à la branhe pricipale.
